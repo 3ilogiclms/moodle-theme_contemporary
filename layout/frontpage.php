@@ -19,7 +19,7 @@
  *
  * @package    theme
  * @subpackage contemporary
- * @copyright � 2012 - 2013 | 3i Logic Innovations Co.(Pvt) Ltd. All Rights Reserved.
+ * @copyright � 2012 - 2013 | 3i Logic (Pvt) Ltd.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));

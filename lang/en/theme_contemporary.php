@@ -18,7 +18,7 @@
  * Strings for component 'theme_standard', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package   theme_contemporary
- * @copyright � 2012 - 2013 | 3i Logic Innovations Co.(Pvt) Ltd. All Rights Reserved.
+ * @copyright � 2012 - 2013 | 3i Logic (Pvt) Ltd.
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $string['pluginname'] = 'Contemporary';
