@@ -94,7 +94,7 @@ echo $OUTPUT->doctype() ?>
     if ($hasnavbar) { ?>
         <div class="navbar clearfix">
             <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
-            <div class="navbutton"> <?php // Comment echo $PAGE->button; ? ?></div>
+            <div class="navbutton"> <?php echo $PAGE->button; ?></div>
         </div>
     <?php
     }
