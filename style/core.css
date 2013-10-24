@@ -340,3 +340,4 @@ body.has_dock {
 .gettheselogs { background-color:#2588B8; color:#FFFFFF; padding:5px 5px 5px 5px; font-family:"Times New Roman"; font-weight:bold;
 cursor:pointer;}
 .gettheselogs:hover { background-color:#1B6D94; color:#FFFFFF; padding:5px 5px 5px 5px; font-family:"Times New Roman"; font-weight:bold;}
+.coursebox .content .summary, .coursebox .content .coursecat {width : 100%;}
