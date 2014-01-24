@@ -72,6 +72,7 @@ function contemporary_set_banner($css, $banner) {
  */
 function contemporary_set_customcss($css, $customcss) {
 	global $OUTPUT;
+	$banner = "";
 	$tag = '[[setting:customcss]]';
 	$replacement = $banner;
 	if (is_null($replacement)) {
