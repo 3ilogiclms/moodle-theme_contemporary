@@ -52,6 +52,7 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <meta name="description" content="<?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?>" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <?php echo $OUTPUT->standard_head_html() ?>
 </head>
 <table width="100%">
