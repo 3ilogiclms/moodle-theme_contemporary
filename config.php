@@ -30,7 +30,7 @@ $THEME->name = 'contemporary';
 
 $THEME->parents = array('canvas', 'base');
 
-
+ 
 // Which existing theme(s) in the /theme/ directory
 // do you want this theme to extend. A theme can
 // extend any number of themes. Rather than
