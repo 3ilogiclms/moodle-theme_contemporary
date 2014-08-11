@@ -1,11 +1,9 @@
 <?php
 // This file is part of Moodle - http://moodle.org/
-//
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
-//
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -16,7 +14,6 @@
 
 /**
  * Theme version info
- *
  * @package    theme
  * @subpackage contemporary
  * @copyright � 2012 - 2013 | 3i Logic (Pvt) Ltd.
@@ -30,7 +27,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_contemporary/banner';
     $title = get_string('banner', 'theme_contemporary');
     $description = get_string('bannerdesc', 'theme_contemporary');
-    $default = $CFG->wwwroot.'/theme/contemporary/pix/banner1.png';
+    $default = $CFG->wwwroot . '/theme/contemporary/pix/banner1.png';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $settings->add($setting);
 
@@ -39,6 +36,24 @@ if ($ADMIN->fulltree) {
     $title = get_string('linkcolor', 'theme_contemporary');
     $description = get_string('linkcolordesc', 'theme_contemporary');
     $default = '#2d83d5';
+    $previewconfig = null;
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
+    $settings->add($setting);
+
+    // Block Header setting.
+    $name = 'theme_contemporary/blockheaderbg';
+    $title = get_string('blockheaderbg', 'theme_contemporary');
+    $description = get_string('blockheaderbgdesc', 'theme_contemporary');
+    $default = 'url("' . $CFG->wwwroot . '/theme/contemporary/pix/bluebar.png") repeat scroll 0 0 rgba(0, 0, 0, 0)';
+    $previewconfig = null;
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
+    $settings->add($setting);
+
+    // Block Header Fonts setting.
+    $name = 'theme_contemporary/blockheadercolor';
+    $title = get_string('blockheadercolor', 'theme_contemporary');
+    $description = get_string('blockheadercolordesc', 'theme_contemporary');
+    $default = '#ffffff';
     $previewconfig = null;
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
@@ -55,5 +70,32 @@ if ($ADMIN->fulltree) {
     $title = get_string('customcss', 'theme_contemporary');
     $description = get_string('customcssdesc', 'theme_contemporary');
     $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $settings->add($setting);
+
+    // Menu Font Color.
+    $name = 'theme_contemporary/menucolor';
+    $title = get_string('menucolor', 'theme_contemporary');
+    $description = get_string('menucolordesc', 'theme_contemporary');
+    $default = '#ffffff';
+    $previewconfig = null;
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
+    $settings->add($setting);
+
+    // Menu Background.
+    $name = 'theme_contemporary/menubg';
+    $title = get_string('menubg', 'theme_contemporary');
+    $description = get_string('menubgdesc', 'theme_contemporary');
+    $default = '#000000';
+    $previewconfig = null;
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
+    $settings->add($setting);
+
+    // Menu Hover Background.
+    $name = 'theme_contemporary/menulinkhover';
+    $title = get_string('menulinkhover', 'theme_contemporary');
+    $description = get_string('menulinkhoverdesc', 'theme_contemporary');
+    $default = '#D8D2C6';
+    $previewconfig = null;
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $settings->add($setting);
 }
