@@ -1,10 +1,11 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
+//
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
+//
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -28,16 +29,6 @@ $string['banner'] = 'Banner';
 $string['bannerdesc'] = 'Enter the URL to an image to use as the banner for this site. E.g: http://www.yoursite.com/path/to/banner.png. The banner should be max 1200px wide and 200px long.';
 $string['linkcolor'] = 'Link Color';
 $string['linkcolordesc'] = 'This sets the link color for the theme.';
-$string['blockheadercolor'] = 'Block Header Font Color';
-$string['blockheadercolordesc'] = 'This sets the font color of the block header.';
-$string['blockheaderbg'] = 'Block Header Background';
-$string['blockheaderbgdesc'] = 'This sets the background color for the theme.';
-$string['menubg'] = 'Menu Background';
-$string['menubgdesc'] = 'This sets the background of menu for the theme.';
-$string['menulinkhover'] = 'Menu Link Hover';
-$string['menulinkhoverdesc'] = 'This sets the background of menu link hover for the theme.';
-$string['menucolor'] = 'Menu Link';
-$string['menucolordesc'] = 'This sets the font color of menu for the theme.';
 $string['tagline'] = 'Tag Line';
 $string['taglinedesc'] = 'The content from this textarea will be displayed under the Site logo on the Homepage';
 $string['footertext'] = 'Footer Text';

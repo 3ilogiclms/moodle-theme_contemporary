@@ -24,4 +24,4 @@ $plugin->version = 2015012900; // The current module version (Date: YYYYMMDDXX)
 $plugin->requires = 2010112400; // Requires this Moodle version
 $plugin->release = '2.7';
 $plugin->maturity = MATURITY_ALPHA;
-$plugin->component = 'theme_contemporary';
+$plugin->component = 'theme_contemporary'; // Full name of the plugin (used for diagnostics)

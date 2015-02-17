@@ -1,22 +1,5 @@
 a {
-    color:[[setting:linkcolor]];
-}
-
-.block .title h2 {
-    color:[[setting:blockheadercolor]];
-    background:[[setting:blockheaderbg]];
-}
-
-#custommenu {
-    background:[[setting:menubg]];
-}
-
-.yui3-skin-sam #page .yui3-menu-label, .yui3-skin-sam #page .yui3-menuitem-content {
-    color:[[setting:menucolor]];
-}
-
-#custommenu #custom_menu_1  .yui3-menu-content li a:hover {
-    background:[[setting:menulinkhover]];
+	color:[[setting:linkcolor]];
 }
 
 /** Custom CSS **/
