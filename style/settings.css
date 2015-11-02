@@ -1,5 +1,31 @@
 a {
-	color:[[setting:linkcolor]];
+    color:[[setting:linkcolor]];
+}
+
+.block .title h2 {
+    color:[[setting:blockheadercolor]];
+    background:[[setting:blockheaderbg]];
+	border-color:[[setting:blockheaderbg]];
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	background:[[setting:blockheaderbg]] none repeat scroll 0 0;}
+	
+#custommenu {
+    background:[[setting:menubg]];
+}
+.filemanager select, .filemanager input, .filemanager button, .filemanager textarea, .file-picker select, .file-picker input, .file-picker button, .file-picker textarea{
+	color:[[setting:blockheadercolor]];
+}
+.btn-primary{
+	 background:[[setting:blockheaderbg]];
+}
+
+.yui3-skin-sam #page .yui3-menu-label, .yui3-skin-sam #page .yui3-menuitem-content {
+    color:[[setting:menucolor]];
+}
+
+#custommenu #custom_menu_1  .yui3-menu-content li a:hover {
+    background:[[setting:menulinkhover]];
 }
 
 /** Custom CSS **/

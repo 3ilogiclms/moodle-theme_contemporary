@@ -43,118 +43,29 @@ $THEME->parents = array('canvas', 'base');
 
 
 
-$THEME->sheets = array('core', 'settings');
+$THEME->sheets = array('bootstrap', 'core', 'settings');
 
-// Added by Azmat
 $THEME->layouts = array(
-     'popup' => array(
+    'popup' => array(
         'file' => 'report.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true),
+        'options' => array('nofooter' => true, 'noblocks' => true, 'nonavbar' => true, 'nocustommenu' => true),
     ),
-	  'report' => array(
+    'report' => array(
         'file' => 'report.php',
         'regions' => array('side-post'),
         'defaultregion' => 'side-post',
-    ),		'frontpage' => array(        'file' => 'frontpage.php',        'regions' => array('side-pre', 'side-post'),        'defaultregion' => 'side-post'    ));
+    ), 'frontpage' => array('file' => 'frontpage.php', 'regions' => array('side-pre', 'side-post'), 'defaultregion' => 'side-post'));
 
 
 // Name of the stylesheet(s) you've including in
 // this theme's /styles/ directory.
 
-
-
 $THEME->enable_dock = true;
-
-
 // Do you want to use the new navigation dock?
-
-
 
 $THEME->editor_sheets = array('editor');
 
-
 // An array of stylesheets to include within the
 // body of the editor.
-
-
 $THEME->csspostprocess = 'contemporary_process_css';
-
-
-// Allows the user to provide the name of a function
-// that all CSS should be passed to before being
-// delivered.
-
-
-// $THEME->filter_mediaplugin_colors
-
-
-// Used to control the colours used in the small
-// media player for the filters
-
-// $THEME->javascripts
-
-//
-// An array containing the names of JavaScript files
-// located in /javascript/ to include in the theme.
-// (gets included in the head)
-//
-
-// $THEME->javascripts_footer
-
-//
-// As above but will be included in the page footer.
-//
-
-// $THEME->larrow
-
-//
-// Overrides the left arrow image used throughout
-// Moodle
-//
-
-// $THEME->rarrow
-
-//
-// Overrides the right arrow image used throughout Moodle
-//
-
-// $THEME->layouts
-
-//
-// An array setting the layouts for the theme
-//
-
-// $THEME->parents_exclude_javascripts
-
-//
-// An array of JavaScript files NOT to inherit from
-// the themes parents
-//
-
-// $THEME->parents_exclude_sheets
-
-//
-// An array of stylesheets not to inherit from the
-// themes parents
-//
-
-// $THEME->plugins_exclude_sheets
-
-//
-// An array of plugin sheets to ignore and not
-// include.
-//
-
-// $THEME->renderfactory
-
-//
-// Sets a custom render factory to use with the
-// theme, used when working with custom renderers.
-//
-
-// $THEME->resource_mp3player_colors
-
-//
-// Controls the colours for the MP3 player
-//
