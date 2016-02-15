@@ -1,4 +1,5 @@
-<?php
+﻿<?php
+
 // This file is part of Moodle - http://moodle.org/
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -15,13 +16,12 @@
  * Theme version info
  * @package    theme
  * @subpackage contemporary
- * @copyright ©2014 - 2015 | 3i Logic (Pvt) Ltd.
+ * @copyright � 2012 - 2014 | 3i Logic (Pvt) Ltd.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
- 
 defined('MOODLE_INTERNAL') || die;
-$plugin->version = 2015012900; // The current module version (Date: YYYYMMDDXX)
+$plugin->version = 2016012900; // The current module version (Date: YYYYMMDDXX)
 $plugin->requires = 2010112400; // Requires this Moodle version
-$plugin->release = '2.7';
-$plugin->maturity = MATURITY_ALPHA;
+$plugin->release = '3';
+$plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'theme_contemporary'; // Full name of the plugin (used for diagnostics)

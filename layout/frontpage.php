@@ -1,6 +1,5 @@
 <?php
 // This file is part of Moodle - http://moodle.org/
-//
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -10,7 +9,6 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -47,106 +45,92 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 
-echo $OUTPUT->doctype() ?>
-<html <?php echo $OUTPUT->htmlattributes() ?>><head>
-    <title><?php echo $PAGE->title ?></title>
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
-    <meta name="description" content="<?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?>" />
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <?php echo $OUTPUT->standard_head_html() ?>
+echo $OUTPUT->doctype()
+?>
+<html <?php echo $OUTPUT->htmlattributes() ?>>
+<head>
+<title><?php echo $PAGE->title ?></title>
+<link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme') ?>" />
+<meta name="description" content="<?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?>" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<?php echo $OUTPUT->standard_head_html() ?>
 </head>
-<table width="100%">
-<tr><td>
-<body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
+
+<body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses . ' ' . join(' ', $bodyclasses)) ?>">
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
-
 <div id="page">
-    <div id="wrapper" class="clearfix">
-
-<!-- START OF HEADER -->
-
-    <div id="page-header" class="clearfix">
-        <div id="page-header-wrapper">
-            <h1 class="headermain"></h1>
-            <div class="headermenu">
-                <?php
-                    echo $OUTPUT->login_info();
-                    echo $OUTPUT->lang_menu();
-                    echo $PAGE->headingmenu;
-                ?>
+    <div id="wrapper" class="clearfix"> 
+        
+        <!-- START OF HEADER -->
+        
+        <div id="page-header" class="clearfix">
+            <div id="page-header-wrapper">
+                <h1 class="headermain"></h1>
+                <div class="headermenu">
+                    <?php
+                                echo $OUTPUT->login_info();
+                                echo $OUTPUT->lang_menu();
+                                echo $PAGE->headingmenu;
+                                ?>
+                </div>
             </div>
         </div>
-    </div>
-<?php if ($hascustommenu) { ?>
-     <div id="custommenu"><?php echo $custommenu; ?></div>
-<?php
-}?>
-<!-- END OF HEADER -->
-
-<!-- START OF CONTENT -->
-
-<div id="page-content-wrapper">
-    <div id="page-content">
-    <!--<marquee>AVAILABLE COURSES</marquee>-->
-        <div id="region-main-box">
-            <div id="region-post-box">
-
-                <div id="region-main-wrap">
-                    <div id="region-main">
-                        <div class="region-content">
-                            <?php echo core_renderer::MAIN_CONTENT_TOKEN ?>
+        <?php if ($hascustommenu) { ?>
+        <div id="custommenu"><?php echo $custommenu; ?></div>
+        <?php }
+                    ?>
+        <!-- END OF HEADER --> 
+        
+        <!-- START OF CONTENT -->
+        
+        <div id="page-content-wrapper">
+            <div id="page-content"> 
+                <!--<marquee>AVAILABLE COURSES</marquee>-->
+                <div id="region-main-box">
+                    <div id="region-post-box">
+                        <div id="region-main-wrap">
+                            <div id="region-main">
+                                <div class="region-content"> <?php echo core_renderer::MAIN_CONTENT_TOKEN ?> </div>
+                            </div>
                         </div>
+                        <?php if ($hassidepre) { ?>
+                        <div id="region-pre" class="block-region">
+                            <div class="region-content"> <?php echo $OUTPUT->blocks_for_region('side-pre') ?> </div>
+                        </div>
+                        <?php } ?>
+                        <?php if ($hassidepost) { ?>
+                        <div id="region-post" class="block-region">
+                            <div class="region-content"> <?php echo $OUTPUT->blocks_for_region('side-post') ?> </div>
+                        </div>
+                        <?php } ?>
                     </div>
                 </div>
-
-                <?php if ($hassidepre) { ?>
-                <div id="region-pre" class="block-region">
-                    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-                    </div>
-                </div>
-                <?php } ?>
-
-                <?php if ($hassidepost) { ?>
-                <div id="region-post" class="block-region">
-                    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
-                    </div>
-                </div>
-                <?php } ?>
-
             </div>
         </div>
+        
+        <!-- END OF CONTENT --> 
+        
     </div>
-</div>
-
-<!-- END OF CONTENT -->
-
-    </div>
-
-<!-- START OF FOOTER -->
-
+    
+    <!-- START OF FOOTER -->
+    
     <div id="page-footer">
         <?php
-        
-        if($hasfooter) {
-		    echo $PAGE->theme->settings->footertext;
-		} else {
+                    if ($hasfooter) {
+                        echo $PAGE->theme->settings->footertext;
+                    } else {
+                        ?>
+        <p class="helplink"> </p>
+        <?php
+                        echo $OUTPUT->login_info();
+                        // echo $OUTPUT->home_link();
+                        echo $OUTPUT->standard_footer_html();
+                    }
                     ?>
-        <p class="helplink">
-                </p><?php
-		    echo $OUTPUT->login_info();
-		   // echo $OUTPUT->home_link();
-		    echo $OUTPUT->standard_footer_html();
-        }
-		?>
     </div>
-
-<!-- END OF FOOTER -->
+    
+    <!-- END OF FOOTER --> 
 </div>
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
-</td>
-</tr>
-</table>
 </html>
