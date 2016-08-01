@@ -20,7 +20,8 @@ function contemporary_process_css($css, $theme) {
     $css = contemporary_set_linkcolor($css, $linkcolor);
 
     // Set the banner image
-    if (!empty($theme->setting_file_url('banner', 'banner'))) {
+    $banner = $theme->setting_file_url('banner', 'banner');
+    if (!empty($banner)) {
         $banner = $theme->setting_file_url('banner', 'banner');
     } else {
         $banner = $CFG->wwwroot . '/theme/contemporary/pix/banner1.jpg';
