@@ -31,18 +31,18 @@ body {margin:auto 0px;width:auto;}
 #page {width:100%;position:relative;}
 #page-header {float:left;width:100%;}
 #page-content {clear:both;float:left;overflow:hidden;position:relative;width:100%;min-width:900px;}
-#page-content #region-main-box {float:left;position:relative;width:189%;}
+#page-content #region-main-box {float:left;left:200px;position:relative;width:200%;}
 #page-content #region-post-box {float:left;left:50%;margin-left:-400px;position:relative;width:100%;}
 #page-content #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
 #page-content #region-main {margin-right:0px;margin-left:400px;overflow:hidden;}
-#page-content #region-pre {float:left;left:200px;overflow:hidden;position:relative;width:290px;margin-left:-50%;}
-#page-content #region-post {float:left;left:0px;overflow:hidden;position:relative;width:255px;}
+#page-content #region-pre {float:left;left:200px;overflow:hidden;position:relative;width:200px;margin-left:-50%;}
+#page-content #region-post {float:left;left:0px;overflow:hidden;position:relative;width:200px;}
 #page-content .region-content {padding:10px;}
 #page-footer {clear:both;float:left;width:100%;}
 
 /** Only side pre **/
 .side-pre-only #page-content #region-post-box {margin-left:-200px;}
-.side-pre-only #page-content #region-main {margin-left:300px;}
+.side-pre-only #page-content #region-main {margin-left:200px;}
 .side-pre-only #page-content #region-pre {left:0px;}
 .side-pre-only #page-content #region-post {width:0px;}
 
