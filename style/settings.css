@@ -23,7 +23,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     background:[[setting:menubg]];
 }
 .filemanager select, .filemanager input, .filemanager button, .filemanager textarea, .file-picker select, .file-picker input, .file-picker button, .file-picker textarea{
-	color:[[setting:blockheadercolor]];
+	color:#333;
 }
 .btn-primary{
 	 background:[[setting:blockheaderbg]];
